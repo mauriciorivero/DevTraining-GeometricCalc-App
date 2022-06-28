@@ -32,3 +32,22 @@ console.log("The triangle perimenter measure: "+trianglePerimeter+"cm");
 console.log("The triangle area measure: "+triangleArea+"cm^2");
 
 console.groupEnd();
+
+
+//Circle geometric calculations
+console.group("Circle calculations");
+const circleRadio = 15;
+const circleDiameter = circleRadio*2;
+const circlePi = Math.PI;
+const perimeterCircle = circleDiameter*circlePi;
+const circleArea = (circleRadio*circleRadio)*circlePi;
+
+
+console.log("The circle radio measure: "+circleRadio+"cm");
+console.log("The circle diameter measure: "+circleDiameter+"cm");
+console.log("The circle Pi measure: "+circlePi+"cm");
+console.log("The circle perimeter measure: "+perimeterCircle+"cm");
+console.log("The circle area measure: "+circleArea+"cm");
+
+
+console.groupEnd();
