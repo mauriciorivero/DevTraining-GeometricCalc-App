@@ -41,10 +41,17 @@ console.groupEnd();
 //Circle geometric calculations
 console.group("Circle calculations");
 const circleRadio = 15;
-const circleDiameter = circleRadio*2;
 const circlePi = Math.PI;
-const perimeterCircle = circleDiameter*circlePi;
-const circleArea = (circleRadio*circleRadio)*circlePi;
+function circleDiameter(circleRadio){
+    return circleRadio*2;
+} 
+function circlePerimeter(circleRadio){
+    const circleDiameter = circleDiameter(circleRadio);
+    return circleDiameter*circlePi;
+}
+function circleArea(circleRadio){
+    return (circleRadio*circleRadio)*circlePi;
+}
 
 
 console.log("The circle radio measure: "+circleRadio+"cm");
