@@ -1,23 +1,21 @@
 //square geometric calculations
-console.group("Square calculations");
-const squareSide = 5;
 
-function squarePerimeter(squareSide){
-    return squareSide * 4;
+function squareCalculations(squareSide){
+    let squarePerimeter = squareSide*4;
+    let squareArea = squareSide*squareSide;
 }
 
-function squareArea(squareSide){
-    return squareSide * squareSide;
-}
-
-console.groupEnd();
 
 //Triangle geometric calculations
-console.group("Triangle calculations");
 
-const triangleHeight = 0;
+document.getElementById("startTriangleCalculation").onclick = function(){
+    const triangleSide1 = parseInt(document.getElementById("triangleSideA").value);
+    const triangleSide2 = parseInt(document.getElementById("triangleSideB").value);
+    const triangleBase = parseInt(document.getElementById("triangleSideC").value);
+    triangleCalculations(triangleSide1, triangleSide2, triangleBase);
+}
 
-function verifyTriangleType(triangleSide1, triangleSide2, triangleBase){
+function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
     if((triangleSide1==triangleSide2)&&(triangleSide1!=triangleBase)){
         let isocelesPerimeter = triangleSide1+triangleSide2+triangleBase;
         let isocelesArea = Math.sqrt((Math.pow(triangleSide1, 2))-((Math.pow(triangleSide2, 2)/4)));
@@ -36,43 +34,20 @@ function verifyTriangleType(triangleSide1, triangleSide2, triangleBase){
         let scalenePerimeter = triangleSide1+triangleSide2+triangleBase;
         let semiperimeter = scalenePerimeter/2;
         let scaleneArea = (2/triangleSide1)*(Math.sqrt(semiperimeter*(semiperimeter-triangleSide1)*(semiperimeter-triangleSide2)*(semiperimeter-triangleBase)));
-        
+
         document.getElementById("triangleTypeResult").innerHTML="The triangle is scalene";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the scalene Triangle is: "+scaleneArea;
         document.getElementById("trianglePerimeterResult").innerHTML = "The perimeter of the scalene Triangle is: "+scalenePerimeter;
     }
 }
 
-function trianglePerimeter(triangleSide1,triangleSide2,triangleBase){
-    return triangleSide1+triangleSide2+triangleBase;
-}
-function triangleArea(triangleBase,triangleHeight){
-    return (triangleBase*triangleHeight)/2;
-}
-
-document.getElementById("startTriangleCalculation").onclick = function(){
-    const triangleSide1 = parseInt(document.getElementById("triangleSideA").value);
-    const triangleSide2 = parseInt(document.getElementById("triangleSideB").value);
-    const triangleBase = parseInt(document.getElementById("triangleSideC").value);
-    verifyTriangleType(triangleSide1, triangleSide2, triangleBase);
-}
-
-
-console.groupEnd();
-
 
 //Circle geometric calculations
-console.group("Circle calculations");
-const circleRadio = 15;
-const circlePi = Math.PI;
-function circleDiameter(circleRadio){
-    return circleRadio*2;
-} 
-function circlePerimeter(circleRadio){
-    const diameter = circleDiameter(circleRadio);
-    return diameter*circlePi;
+
+function circleCalculations(radius){
+    const circleRadio = radius;
+    const circlePi = Math.PI;
+    let circleDiameter = circleRadio*2;
+    let circlePerimeter = circleDiameter*circlePi;
+    let circleArea = (circleRadio*circleRadio)*circlePi;
 }
-function circleArea(circleRadio){
-    return (circleRadio*circleRadio)*circlePi;
-}
-console.groupEnd();
