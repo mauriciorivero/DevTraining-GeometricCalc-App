@@ -95,6 +95,22 @@ function squareArea(squareSide){
     return squareSide*squareSide;
 }
 
+//Rectangle geometric calculations
+document.getElementById("startRectangleCalculation").onclick = function(){
+    const rectangleBase = parseInt(document.getElementById("rectangleBase").value);
+    const rectangleHeight = parseInt(document.getElementById("rectangleHeight").value);
+    document.getElementById("rectanglePerimeterResult").innerHTML = "The rectangle perimeter measures: "+rectanglePerimeter(rectangleBase, rectangleHeight);
+    document.getElementById("rectangleAreaResult").innerHTML = "The rectangle area measures: "+rectangleArea(rectangleBase, rectangleHeight);
+}
+
+function rectanglePerimeter(rectangleBase, rectangleHeight){
+    return (2*rectangleBase)+(2*rectangleHeight);
+}
+
+function rectangleArea(rectangleBase, rectangleHeight){
+    return rectangleBase*rectangleHeight;
+}
+
 
 //Triangle geometric calculations
 
