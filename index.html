@@ -16,13 +16,13 @@
     </header>
     <main>
         <section id="main_options">
-            <a href=""><img src="img/Geometric_forms_1_Square.png" alt="Square calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_2_Rectangle.png" alt="Rectangle calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_3_Triangle.png" alt="Triangle calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_4_Rhombus.png" alt="Rhombus calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_5_Rhomboid.png" alt="Rhomboid calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_6_Trapezoid.png" alt="Trapezoid calc button access"></a>
-            <a href=""><img src="img/Geometric_forms_7_Circle.png" alt="Circle calc button access"></a>
+            <a id="squareOptionShow" href="#"><img src="img/Geometric_forms_1_Square.png" alt="Square calc button access"></a>
+            <a id="rectangleOptionShow" href="#"><img src="img/Geometric_forms_2_Rectangle.png" alt="Rectangle calc button access"></a>
+            <a id="triangleOptionShow" href="#"><img src="img/Geometric_forms_3_Triangle.png" alt="Triangle calc button access"></a>
+            <a id="rhombusOptionShow" href="#"><img src="img/Geometric_forms_4_Rhombus.png" alt="Rhombus calc button access"></a>
+            <a id="rhomboidOptionShow" href="#"><img src="img/Geometric_forms_5_Rhomboid.png" alt="Rhomboid calc button access"></a>
+            <a id="trapezoidOptionShow" href="#"><img src="img/Geometric_forms_6_Trapezoid.png" alt="Trapezoid calc button access"></a>
+            <a id="circleOptionShow" href="#"><img src="img/Geometric_forms_7_Circle.png" alt="Circle calc button access"></a>
         </section>
         <section id="triangle_option">
             <input id="triangleSideA" type="number" placeholder="Side A">
@@ -34,6 +34,7 @@
             <h2 id="triangleTypeResult"></h2>
             <h2 id="trianglePerimeterResult"></h2>
             <h2 id="triangleAreaResult"></h2>
+            <a id="traingleOptionBack" href="#">Back</a>
         </section>
         <section id="square_option">
             <input id="squareSide" type="number" placeholder="Square Side">
@@ -42,18 +43,29 @@
             </button>
             <h2 id="squarePerimeterResult"></h2>
             <h2 id="squareAreaResult"></h2>
+            <a id="squareOptionBack" href="#">Back</a>
         </section>
         <section id="rectangle_option">
-            
+            <input id="rectangleBase" type="number" placeholder="Rectangle Base">
+            <input id="rectangleHeight" type="number" placeholder="Rectangle Height">
+            <button id="startRectangleCalculation" type="button">
+                Calculate
+            </button>
+            <h2 id="rectanglePerimeterResult"></h2>
+            <h2 id="rectangleAreaResult"></h2>
+            <a id="rectangleOptionBack" href="#">Back</a>
         </section>
         <section id="rhombus_option">
-            
+            <a id="rhombusOptionBack" href="#">Back</a>
         </section>
         <section id="rhomboid_option">
-            
+            <a id="rhomboidOptionBack" href="#">Back</a>
         </section>
         <section id="trapezoid_option">
-            
+            <a id="trapezoidOptionBack" href="#">Back</a>
+        </section>
+        <section id="circle_option">
+            <a id="circleOptionBack" href="#">Back</a>
         </section>
     </main>
     <footer>
