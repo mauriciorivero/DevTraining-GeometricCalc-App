@@ -164,6 +164,22 @@ function rhombusArea(rhombusMajorDiagonal, rhombusMinorDiagonal){
     return (rhombusMajorDiagonal*rhombusMinorDiagonal)/2;
 }
 
+//Rhomboid geometric calculations
+document.getElementById("startRhomboidCalculation").onclick = function(){
+    const rhomboidBase = parseInt(document.getElementById("rhomboidBase").value);
+    const rhomboidHeight = parseInt(document.getElementById("rhomboidHeight").value);
+    document.getElementById("rhomboidPerimeterResult").innerHTML = "The rhomboid perimeter measures: "+rhomboidPerimeter(rhomboidBase, rhomboidHeight);
+    document.getElementById("rhomboidAreaResult").innerHTML = "The rhomboid area measures: "+rhomboidArea(rhomboidBase, rhomboidHeight);
+}
+
+function rhomboidPerimeter(rhomboidBase, rhomboidHeight){
+    return (2*rhomboidBase)+(2*rhomboidHeight);
+}
+
+function rhomboidArea(rhomboidBase, rhomboidHeight){
+    return rhomboidBase*rhomboidHeight;
+}
+
 
 //Circle geometric calculations
 
