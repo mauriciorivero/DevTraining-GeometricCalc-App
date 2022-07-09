@@ -1,3 +1,8 @@
+//The navigation flow is programed here
+
+
+
+
 //square geometric calculations
 document.getElementById("startSquareCalculation").onclick = function(){
     const squareSide = parseInt(document.getElementById("squareSide").value);
