@@ -1,8 +1,16 @@
 //square geometric calculations
+document.getElementById("startSquareCalculation").onclick = function(){
+    const squareSide = parseInt(document.getElementById("squareSide").value);
+    document.getElementById("squarePerimeterResult").innerHTML = "The square perimeter measures: "+squarePerimeter(squareSide);
+    document.getElementById("squareAreaResult").innerHTML = "The square area measures: "+squareArea(squareSide);
+}
 
-function squareCalculations(squareSide){
-    let squarePerimeter = squareSide*4;
-    let squareArea = squareSide*squareSide;
+function squarePerimeter(squareSide){
+    return squareSide*4;
+}
+
+function squareArea(squareSide){
+    return squareSide*squareSide;
 }
 
 
@@ -17,8 +25,8 @@ document.getElementById("startTriangleCalculation").onclick = function(){
 
 function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
     if((triangleSide1==triangleSide2)&&(triangleSide1!=triangleBase)){
-        let isocelesPerimeter = triangleSide1+triangleSide2+triangleBase;
-        let isocelesArea = Math.sqrt((Math.pow(triangleSide1, 2))-((Math.pow(triangleSide2, 2)/4)));
+        let isocelesPerimeter = (triangleSide1+triangleSide2+triangleBase)/2;
+        let isocelesArea = Math.sqrt(isocelesPerimeter*(isocelesPerimeter-triangleSide1)*(isocelesPerimeter-triangleBase)*(isocelesPerimeter-triangleSide2));
 
         document.getElementById("triangleTypeResult").innerHTML="The triangle is isoceles";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the Isoceles Triangle is: "+isocelesArea;
@@ -26,14 +34,14 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
     }else if((triangleSide1==triangleSide2)&&(triangleSide1==triangleBase)){
         let equilateralPerimeter = triangleSide1+triangleSide2+triangleBase;
         let equilateralArea = ((Math.sqrt(3))/4)*(Math.pow(triangleSide1,2));
-
+        
         document.getElementById("triangleTypeResult").innerHTML="The triangle is equilateral";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the equilateral Triangle is: "+equilateralArea;
         document.getElementById("trianglePerimeterResult").innerHTML = "The perimeter of the equilateral Triangle is: "+equilateralPerimeter;
     }else if(triangleSide1!=triangleSide2!=triangleBase){
         let scalenePerimeter = triangleSide1+triangleSide2+triangleBase;
         let semiperimeter = scalenePerimeter/2;
-        let scaleneArea = (2/triangleSide1)*(Math.sqrt(semiperimeter*(semiperimeter-triangleSide1)*(semiperimeter-triangleSide2)*(semiperimeter-triangleBase)));
+        let scaleneArea = Math.sqrt(semiperimeter*(semiperimeter-triangleSide1)*(semiperimeter-triangleSide2)*(semiperimeter-triangleBase));
 
         document.getElementById("triangleTypeResult").innerHTML="The triangle is scalene";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the scalene Triangle is: "+scaleneArea;

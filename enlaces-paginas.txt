@@ -1,0 +1,6 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
+https://www.diferenciador.com/tipos-de-triangulos/
+https://www.matematicas18.com/es/tutoriales/geometria/figuras-geometricas/triangulo/triangulo-isosceles/
+https://www.universoformulas.com/matematicas/geometria/area-triangulo-equilatero/
+https://www.matematicas18.com/es/tutoriales/geometria/figuras-geometricas/triangulo/triangulo-escaleno/
