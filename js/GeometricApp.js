@@ -180,13 +180,39 @@ function rhomboidArea(rhomboidBase, rhomboidHeight){
     return rhomboidBase*rhomboidHeight;
 }
 
+//Trapezoid geometric calculations
+document.getElementById("startTrapezoidCalculation").onclick = function(){
+    const trapezoidSide1 = parseInt(document.getElementById("trapezoidSide1").value);
+    const trapezoidSide2 = parseInt(document.getElementById("trapezoidSide2").value);
+    const trapezoidSide3 = parseInt(document.getElementById("trapezoidSide3").value);
+    const trapezoidSide4 = parseInt(document.getElementById("trapezoidSide4").value);
+    document.getElementById("trapezoidPerimeterResult").innerHTML = "The trapezoid perimeter measures: "+trapezoidPerimeter(rhomboidBase, rhomboidHeight);
+    document.getElementById("trapezoidAreaResult").innerHTML = "The trapezoid area measures: "+trapezoidArea(rhomboidBase, rhomboidHeight);
+}
+
+function trapezoidPerimeter(rhomboidBase, rhomboidHeight){
+    return (2*rhomboidBase)+(2*rhomboidHeight);
+}
+
+function trapezoidArea(rhomboidBase, rhomboidHeight){
+    return rhomboidBase*rhomboidHeight;
+}
+
 
 //Circle geometric calculations
+document.getElementById("startCircleCalculation").onclick = function(){
+    const circleRadius = parseInt(document.getElementById("circleRadius").value);
+    document.getElementById("circlePerimeterResult").innerHTML = "The circle perimeter measures: "+circlePerimeter(circleRadius);
+    document.getElementById("circleAreaResult").innerHTML = "The circle area measures: "+circleArea(circleRadius);
+}
 
-function circleCalculations(radius){
-    const circleRadio = radius;
+function circlePerimeter(circleRadius){
     const circlePi = Math.PI;
-    let circleDiameter = circleRadio*2;
-    let circlePerimeter = circleDiameter*circlePi;
-    let circleArea = (circleRadio*circleRadio)*circlePi;
+    let circleDiameter = circleRadius*2;
+    return circleDiameter*circlePi;
+}
+
+function circleArea(circleRadius){
+    const circlePi = Math.PI;
+    return (circleRadius*circleRadius)*circlePi;
 }
