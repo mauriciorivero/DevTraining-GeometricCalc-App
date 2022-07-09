@@ -147,6 +147,23 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
     }
 }
 
+//Rhombus geometric calculations
+document.getElementById("startRhombusCalculation").onclick = function(){
+    const rhombusSide = parseInt(document.getElementById("rhombusSide").value);
+    const rhombusMajorDiagonal = parseInt(document.getElementById("rhombusMajorDiagonal").value);
+    const rhombusMinorDiagonal = parseInt(document.getElementById("rhombusMinorDiagonal").value);
+    document.getElementById("rhombusPerimeterResult").innerHTML = "The rhombus perimeter measures: "+rhombusPerimeter(rhombusSide);
+    document.getElementById("rhombusAreaResult").innerHTML = "The rhombus area measures: "+rhombusArea(rhombusMajorDiagonal, rhombusMinorDiagonal);
+}
+
+function rhombusPerimeter(rhombusSide){
+    return 4*rhombusSide
+}
+
+function rhombusArea(rhombusMajorDiagonal, rhombusMinorDiagonal){
+    return (rhombusMajorDiagonal*rhombusMinorDiagonal)/2;
+}
+
 
 //Circle geometric calculations
 
