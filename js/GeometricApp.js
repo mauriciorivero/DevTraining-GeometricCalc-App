@@ -1,4 +1,7 @@
-//The navigation flow is programed here
+/*
+The following code is for navigational porpouse, in the first block i hide the diferents section forms for the shape calculations
+and in the next group of code blocks i code the appearing and dissapearing of every form section according to the user selection
+*/
 document.getElementById("square_option").style.display="none";
 document.getElementById("triangle_option").style.display="none";
 document.getElementById("rectangle_option").style.display="none";
@@ -6,6 +9,7 @@ document.getElementById("rhombus_option").style.display="none";
 document.getElementById("rhomboid_option").style.display="none";
 document.getElementById("trapezoid_option").style.display="none";
 document.getElementById("circle_option").style.display="none";
+
 
 
 document.getElementById("squareOptionShow").onclick = function(){
@@ -80,7 +84,9 @@ document.getElementById("circleOptionBack").onclick = function(){
 
 
 
-//square geometric calculations
+/*
+The next code block is for the function calculations of the square
+*/
 document.getElementById("startSquareCalculation").onclick = function(){
     const squareSide = parseInt(document.getElementById("squareSide").value);
     document.getElementById("squarePerimeterResult").innerHTML = "The square perimeter measures: "+squarePerimeter(squareSide);
@@ -95,7 +101,9 @@ function squareArea(squareSide){
     return squareSide*squareSide;
 }
 
-//Rectangle geometric calculations
+/*
+The next code block is for the function calculations of the rectangle
+*/
 document.getElementById("startRectangleCalculation").onclick = function(){
     const rectangleBase = parseInt(document.getElementById("rectangleBase").value);
     const rectangleHeight = parseInt(document.getElementById("rectangleHeight").value);
@@ -112,7 +120,9 @@ function rectangleArea(rectangleBase, rectangleHeight){
 }
 
 
-//Triangle geometric calculations
+/*
+The next code block is for the function calculations of the triangle
+*/
 
 document.getElementById("startTriangleCalculation").onclick = function(){
     const triangleSide1 = parseInt(document.getElementById("triangleSideA").value);
@@ -147,7 +157,9 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
     }
 }
 
-//Rhombus geometric calculations
+/*
+The next code block is for the function calculations of the Rhombus
+*/
 document.getElementById("startRhombusCalculation").onclick = function(){
     const rhombusSide = parseInt(document.getElementById("rhombusSide").value);
     const rhombusMajorDiagonal = parseInt(document.getElementById("rhombusMajorDiagonal").value);
@@ -164,7 +176,9 @@ function rhombusArea(rhombusMajorDiagonal, rhombusMinorDiagonal){
     return (rhombusMajorDiagonal*rhombusMinorDiagonal)/2;
 }
 
-//Rhomboid geometric calculations
+/*
+The next code block is for the function calculations of the rhomboid
+*/
 document.getElementById("startRhomboidCalculation").onclick = function(){
     const rhomboidBase = parseInt(document.getElementById("rhomboidBase").value);
     const rhomboidHeight = parseInt(document.getElementById("rhomboidHeight").value);
@@ -180,7 +194,9 @@ function rhomboidArea(rhomboidBase, rhomboidHeight){
     return rhomboidBase*rhomboidHeight;
 }
 
-//Trapezoid geometric calculations
+/*
+The next code block is for the function calculations of the trapezoid
+*/
 document.getElementById("startTrapezoidCalculation").onclick = function(){
     const trapezoidSide1 = parseInt(document.getElementById("trapezoidSide1").value);
     const trapezoidSide2 = parseInt(document.getElementById("trapezoidSide2").value);
@@ -199,7 +215,9 @@ function trapezoidArea(rhomboidBase, rhomboidHeight){
 }
 
 
-//Circle geometric calculations
+/*
+The next code block is for the function calculations of the circle
+*/
 document.getElementById("startCircleCalculation").onclick = function(){
     const circleRadius = parseInt(document.getElementById("circleRadius").value);
     document.getElementById("circlePerimeterResult").innerHTML = "The circle perimeter measures: "+circlePerimeter(circleRadius);
