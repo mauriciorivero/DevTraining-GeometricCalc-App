@@ -1,5 +1,64 @@
+
+@font-face {
+    font-family: Death_Stranded;
+    src: url(/css/fonts/Death_Stranded.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: Petrichor_Sublimey;
+    src: url(/css/fonts/Petrichor_Sublimey.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: Sackers_Gothic_Light_AT;
+    src: url(/css/fonts/Sackers_Gothic_Light_AT.otf) format("opentype");
+  }
+  
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000103;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 80%;
+}
+
+.AppTitle{
+    color: #BAEEEE;
+    font-family: Death_Stranded;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.separatorTitle{
+    background-color: #BAEEEE;
+    border-color: #BAEEEE;
+}
+
+main{
+
+}
+
+.AppSubtitle{
+    color: #BAEEEE;
+    font-family: Sackers_Gothic_Light_AT;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
 }
