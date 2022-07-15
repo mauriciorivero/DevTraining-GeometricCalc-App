@@ -31,12 +31,13 @@ body{
 }
 
 header{
+    align-content: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 nav{
-    width: 80%;
+    width: 100%;
 }
 
 .AppTitle{
@@ -52,7 +53,8 @@ nav{
 }
 
 main{
-
+    display: flex;
+    justify-content: center;
 }
 
 .AppSubtitle{
@@ -62,3 +64,44 @@ main{
     margin-top: 2rem;
     text-align: center;
 }
+
+.main_options_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#squareOptionShow img:hover{
+    content: url(../img/Geometric_forms_1_Square_hover.png);
+}
+
+#rectangleOptionShow img:hover{
+    content: url(../img/Geometric_forms_2_Rectangle_hover.png);
+}
+
+#triangleOptionShow img:hover{
+    content: url(../img/Geometric_forms_3_Triangle_hover.png);
+}
+
+#rhombusOptionShow img:hover{
+    content: url(../img/Geometric_forms_4_Rhombus_hover.png);
+}
+
+#rhomboidOptionShow img:hover{
+    content: url(../img/Geometric_forms_5_Rhomboid_hover.png);
+}
+
+#trapezoidOptionShow img:hover{
+    content: url(../img/Geometric_forms_6_Trapezoid_hover.png);
+}
+
+#circleOptionShow img:hover{
+    content: url(../img/Geometric_forms_7_Circle_hover.png);
+}
+
+#circleOptionShow img:active{
+    content: url(../img/Geometric_forms_7_Circle_hover.png);
+}
+
+
+
