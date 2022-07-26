@@ -73,14 +73,18 @@ main{
     font-family: Sackers_Gothic_Light_AT;
     font-size: 2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .main_options_container{
-    border: solid 3px #BAEEEE;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 50%;
+}
+
+.options_container{
+
 }
 
 #squareOptionShow img:hover{

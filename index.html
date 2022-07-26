@@ -13,13 +13,13 @@
     <header>
         <nav>
             <img src="img/platzi-logo-01.svg" alt="App logo">
-            <h1 class="AppTitle">Geometric calc app</h1>
+            <h1 id="AppTitle" class="AppTitle">Geometric calc app</h1>
         </nav>
         
     </header>
     <hr class="separatorTitle">
     <main>
-        <h3 class="AppSubtitle">Select the Geometric shape to calculate</h3>
+        <h3 id="options_title" class="AppSubtitle">Select the Geometric shape to calculate</h3>
         <!--The next section has the main menu for the app-->
         <!--The main menu dissapear with every clic and shows the selected option for shape calculation-->
         <section class="main_options_container" id="main_options">
@@ -33,7 +33,11 @@
         </section>
         <!--The following sections have the diferents containers with the form for every shapes calculations -->
         <!--Every section appear or dissapear with the functions for navigations in JS-->
-        <section id="triangle_option">
+        <section class="options_container" id="triangle_option">
+            <h3></h3>
+            <hr class="separatorTitle">
+            <img src="" alt="">
+
             <input id="triangleSideA" type="number" placeholder="Side A">
             <input id="triangleSideB" type="number" placeholder="Side B">
             <input id="triangleSideC" type="number" placeholder="Side C (base)">

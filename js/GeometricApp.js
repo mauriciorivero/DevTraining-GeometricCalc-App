@@ -13,71 +13,99 @@ document.getElementById("circle_option").style.display="none";
 
 
 document.getElementById("squareOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Square Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("square_option").style.display="inline-block";
 }
 
 document.getElementById("squareOptionBack").onclick = function(){
-    document.getElementById("main_options").style.display="inline-block";
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
+    document.getElementById("main_options").style.display="flex";
     document.getElementById("square_option").style.display="none";
 }
 
 document.getElementById("rectangleOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Rectangle Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("rectangle_option").style.display="inline-block";
 }
 
 document.getElementById("rectangleOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("rectangle_option").style.display="none";
 }
 
 document.getElementById("triangleOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Triangle Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("triangle_option").style.display="inline-block";
 }
 
 document.getElementById("traingleOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("triangle_option").style.display="none";
 }
 
 document.getElementById("rhombusOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Rhombus Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("rhombus_option").style.display="inline-block";
 }
 
 document.getElementById("rhombusOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("rhombus_option").style.display="none";
 }
 
 document.getElementById("rhomboidOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Rhomboid Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("rhomboid_option").style.display="inline-block";
 }
 
 document.getElementById("rhomboidOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("rhomboid_option").style.display="none";
 }
 
 document.getElementById("trapezoidOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Trapezoid Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("trapezoid_option").style.display="inline-block";
 }
 
 document.getElementById("trapezoidOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("trapezoid_option").style.display="none";
 }
 
 document.getElementById("circleOptionShow").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Circle Calculations";
+    document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
     document.getElementById("circle_option").style.display="inline-block";
 }
 
 document.getElementById("circleOptionBack").onclick = function(){
+    document.getElementById("AppTitle").innerHTML="Geometric Calc App";
+    document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="inline-block";
     document.getElementById("circle_option").style.display="none";
 }
