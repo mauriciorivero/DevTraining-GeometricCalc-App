@@ -16,7 +16,7 @@ document.getElementById("squareOptionShow").onclick = function(){
     document.getElementById("AppTitle").innerHTML="Square Calculations";
     document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
-    document.getElementById("square_option").style.display="inline-block";
+    document.getElementById("square_option").style.display="flex";
 }
 
 document.getElementById("squareOptionBack").onclick = function(){
@@ -30,7 +30,7 @@ document.getElementById("rectangleOptionShow").onclick = function(){
     document.getElementById("AppTitle").innerHTML="Rectangle Calculations";
     document.getElementById("options_title").style.display="none";
     document.getElementById("main_options").style.display="none";
-    document.getElementById("rectangle_option").style.display="inline-block";
+    document.getElementById("rectangle_option").style.display="flex";
 }
 
 document.getElementById("rectangleOptionBack").onclick = function(){

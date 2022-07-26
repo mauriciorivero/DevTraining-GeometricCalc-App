@@ -136,6 +136,20 @@ main{
     width: 100%;
 }
 
+.options_container a{
+    background-color: #14568C;
+    border: #0E8CB3 solid 3px;
+    color: #BAEEEE;
+    display: block;
+    font-family: Sackers_Gothic_Light_AT;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    width: 100%;
+}
+
 #squareOptionShow img:hover{
     content: url(../img/Geometric_forms_1_Square_hover.png);
 }
