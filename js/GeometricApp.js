@@ -10,6 +10,14 @@ document.getElementById("rhomboid_option").style.display="none";
 document.getElementById("trapezoid_option").style.display="none";
 document.getElementById("circle_option").style.display="none";
 
+document.getElementById("squareResults").style.display = "none";
+document.getElementById("rectangleResults").style.display = "none";
+document.getElementById("triangleResults").style.display = "none";
+document.getElementById("rhombusResults").style.display = "none";
+document.getElementById("rhomboidResults").style.display = "none";
+document.getElementById("trapezoidResults").style.display = "none";
+document.getElementById("circleResults").style.display = "none";
+
 
 
 document.getElementById("squareOptionShow").onclick = function(){
@@ -24,6 +32,7 @@ document.getElementById("squareOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("square_option").style.display="none";
+    document.getElementById("squareResults").style.display = "none";
 }
 
 document.getElementById("rectangleOptionShow").onclick = function(){
@@ -38,6 +47,7 @@ document.getElementById("rectangleOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("rectangle_option").style.display="none";
+    document.getElementById("rectangleResults").style.display = "none";
 }
 
 document.getElementById("triangleOptionShow").onclick = function(){
@@ -47,11 +57,12 @@ document.getElementById("triangleOptionShow").onclick = function(){
     document.getElementById("triangle_option").style.display="flex";
 }
 
-document.getElementById("traingleOptionBack").onclick = function(){
+document.getElementById("triangleOptionBack").onclick = function(){
     document.getElementById("AppTitle").innerHTML="Geometric Calc App";
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("triangle_option").style.display="none";
+    document.getElementById("triangleResults").style.display = "none";
 }
 
 document.getElementById("rhombusOptionShow").onclick = function(){
@@ -66,6 +77,7 @@ document.getElementById("rhombusOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("rhombus_option").style.display="none";
+    document.getElementById("rhombusResults").style.display = "none";
 }
 
 document.getElementById("rhomboidOptionShow").onclick = function(){
@@ -80,6 +92,7 @@ document.getElementById("rhomboidOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("rhomboid_option").style.display="none";
+    document.getElementById("rhomboidResults").style.display = "none";
 }
 
 document.getElementById("trapezoidOptionShow").onclick = function(){
@@ -94,6 +107,7 @@ document.getElementById("trapezoidOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("trapezoid_option").style.display="none";
+    document.getElementById("trapezoidResults").style.display = "none";
 }
 
 document.getElementById("circleOptionShow").onclick = function(){
@@ -108,6 +122,7 @@ document.getElementById("circleOptionBack").onclick = function(){
     document.getElementById("options_title").style.display="block";
     document.getElementById("main_options").style.display="flex";
     document.getElementById("circle_option").style.display="none";
+    document.getElementById("cicrleResults").style.display = "none";
 }
 
 
@@ -117,6 +132,7 @@ The next code block is for the function calculations of the square
 */
 document.getElementById("startSquareCalculation").onclick = function(){
     const squareSide = parseInt(document.getElementById("squareSide").value);
+    document.getElementById("squareResults").style.display = "flex";
     document.getElementById("squarePerimeterResult").innerHTML = "The square perimeter measures: "+squarePerimeter(squareSide);
     document.getElementById("squareAreaResult").innerHTML = "The square area measures: "+squareArea(squareSide);
 }
@@ -135,6 +151,7 @@ The next code block is for the function calculations of the rectangle
 document.getElementById("startRectangleCalculation").onclick = function(){
     const rectangleBase = parseInt(document.getElementById("rectangleBase").value);
     const rectangleHeight = parseInt(document.getElementById("rectangleHeight").value);
+    document.getElementById("rectangleResults").style.display = "flex";
     document.getElementById("rectanglePerimeterResult").innerHTML = "The rectangle perimeter measures: "+rectanglePerimeter(rectangleBase, rectangleHeight);
     document.getElementById("rectangleAreaResult").innerHTML = "The rectangle area measures: "+rectangleArea(rectangleBase, rectangleHeight);
 }
@@ -164,6 +181,7 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
         let isocelesPerimeter = (triangleSide1+triangleSide2+triangleBase)/2;
         let isocelesArea = Math.sqrt(isocelesPerimeter*(isocelesPerimeter-triangleSide1)*(isocelesPerimeter-triangleBase)*(isocelesPerimeter-triangleSide2));
 
+        document.getElementById("triangleResults").style.display = "flex";
         document.getElementById("triangleTypeResult").innerHTML="The triangle is isoceles";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the Isoceles Triangle is: "+isocelesArea;
         document.getElementById("trianglePerimeterResult").innerHTML = "The perimeter of the Isoceles Triangle is: "+isocelesPerimeter;
@@ -171,6 +189,7 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
         let equilateralPerimeter = triangleSide1+triangleSide2+triangleBase;
         let equilateralArea = ((Math.sqrt(3))/4)*(Math.pow(triangleSide1,2));
         
+        document.getElementById("triangleResults").style.display = "flex";
         document.getElementById("triangleTypeResult").innerHTML="The triangle is equilateral";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the equilateral Triangle is: "+equilateralArea;
         document.getElementById("trianglePerimeterResult").innerHTML = "The perimeter of the equilateral Triangle is: "+equilateralPerimeter;
@@ -179,6 +198,7 @@ function triangleCalculations(triangleSide1, triangleSide2, triangleBase){
         let semiperimeter = scalenePerimeter/2;
         let scaleneArea = Math.sqrt(semiperimeter*(semiperimeter-triangleSide1)*(semiperimeter-triangleSide2)*(semiperimeter-triangleBase));
 
+        document.getElementById("triangleResults").style.display = "flex";
         document.getElementById("triangleTypeResult").innerHTML="The triangle is scalene";
         document.getElementById("triangleAreaResult").innerHTML = "The area of the scalene Triangle is: "+scaleneArea;
         document.getElementById("trianglePerimeterResult").innerHTML = "The perimeter of the scalene Triangle is: "+scalenePerimeter;
@@ -192,6 +212,8 @@ document.getElementById("startRhombusCalculation").onclick = function(){
     const rhombusSide = parseInt(document.getElementById("rhombusSide").value);
     const rhombusMajorDiagonal = parseInt(document.getElementById("rhombusMajorDiagonal").value);
     const rhombusMinorDiagonal = parseInt(document.getElementById("rhombusMinorDiagonal").value);
+    
+    document.getElementById("rhombusResults").style.display = "flex";
     document.getElementById("rhombusPerimeterResult").innerHTML = "The rhombus perimeter measures: "+rhombusPerimeter(rhombusSide);
     document.getElementById("rhombusAreaResult").innerHTML = "The rhombus area measures: "+rhombusArea(rhombusMajorDiagonal, rhombusMinorDiagonal);
 }
@@ -210,6 +232,8 @@ The next code block is for the function calculations of the rhomboid
 document.getElementById("startRhomboidCalculation").onclick = function(){
     const rhomboidBase = parseInt(document.getElementById("rhomboidBase").value);
     const rhomboidHeight = parseInt(document.getElementById("rhomboidHeight").value);
+    
+    document.getElementById("rhomboidResults").style.display = "flex";
     document.getElementById("rhomboidPerimeterResult").innerHTML = "The rhomboid perimeter measures: "+rhomboidPerimeter(rhomboidBase, rhomboidHeight);
     document.getElementById("rhomboidAreaResult").innerHTML = "The rhomboid area measures: "+rhomboidArea(rhomboidBase, rhomboidHeight);
 }
@@ -230,6 +254,7 @@ document.getElementById("startTrapezoidCalculation").onclick = function(){
     const trapezoidSide2 = parseInt(document.getElementById("trapezoidSide2").value);
     const trapezoidSide3 = parseInt(document.getElementById("trapezoidSide3").value);
     const trapezoidSide4 = parseInt(document.getElementById("trapezoidSide4").value);
+    document.getElementById("trapezoidResults").style.display = "flex";
     document.getElementById("trapezoidPerimeterResult").innerHTML = "The trapezoid perimeter measures: "+trapezoidPerimeter(rhomboidBase, rhomboidHeight);
     document.getElementById("trapezoidAreaResult").innerHTML = "The trapezoid area measures: "+trapezoidArea(rhomboidBase, rhomboidHeight);
 }
@@ -248,6 +273,7 @@ The next code block is for the function calculations of the circle
 */
 document.getElementById("startCircleCalculation").onclick = function(){
     const circleRadius = parseInt(document.getElementById("circleRadius").value);
+    document.getElementById("circleResults").style.display = "flex";
     document.getElementById("circlePerimeterResult").innerHTML = "The circle perimeter measures: "+circlePerimeter(circleRadius);
     document.getElementById("circleAreaResult").innerHTML = "The circle area measures: "+circleArea(circleRadius);
 }
