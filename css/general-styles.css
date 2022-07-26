@@ -100,7 +100,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .options_container img{
@@ -133,6 +132,25 @@ main{
     margin-bottom: 3rem;
     text-align: center;
     padding: 1rem;
+    width: 100%;
+}
+
+.options_container div{
+    align-items: center;
+    background-color:#0E8CB3;
+    border: solid #FFF 3px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.options_container h2{
+    color: #FFF;
+    font-family: Sackers_Gothic_Light_AT;
+    margin-bottom: 1rem;
+    text-align: center;
     width: 100%;
 }
 
