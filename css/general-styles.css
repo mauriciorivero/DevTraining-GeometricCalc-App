@@ -2,16 +2,19 @@
 @font-face {
     font-family: Death_Stranded;
     src: url(/css/fonts/Death_Stranded.otf) format("opentype");
+    font-display: swap; 
   }
   
   @font-face {
     font-family: Petrichor_Sublimey;
     src: url(/css/fonts/Petrichor_Sublimey.otf) format("opentype");
+    font-display: swap; 
   }
   
   @font-face {
     font-family: Sackers_Gothic_Light_AT;
     src: url(/css/fonts/Sackers_Gothic_Light_AT.otf) format("opentype");
+    font-display: swap; 
   }
   
 
@@ -69,6 +72,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 50%;
 }
 
 #squareOptionShow img:hover{
