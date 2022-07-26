@@ -1,4 +1,16 @@
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @font-face {
     font-family: Death_Stranded;
     src: url(/css/fonts/Death_Stranded.otf) format("opentype");
@@ -84,7 +96,44 @@ main{
 }
 
 .options_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.options_container img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 5rem;
+}
+
+.options_container input{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid #BAEEEE 2px;
+    color: #BAEEEE;
+    display: block;
+    font-family: Sackers_Gothic_Light_AT;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.options_container button{
+    background-color: #216B55;
+    border: #258B6A solid 3px;
+    color: #BAEEEE;
+    display: block;
+    font-family: Sackers_Gothic_Light_AT;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
 }
 
 #squareOptionShow img:hover{
