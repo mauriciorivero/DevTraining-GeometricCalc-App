@@ -289,3 +289,7 @@ function circleArea(circleRadius){
     return (circleRadius*circleRadius)*circlePi;
 }
 
+document.getElementById("copyright").onclick = function(){
+    document.getElementById("cuerpo").style.position="relative";
+    document.getElementById("cuerpo").style.top="100px";
+}
